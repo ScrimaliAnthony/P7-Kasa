@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87.5vw;
+    margin-top: 2.8vw;
+    grid-area: he;
+
+    .logo {
+        width: 13.5vw;
+
+        .logo__letterK {
+            width: 3.5vw;
+        }
+
+        .logo__letterAM {
+            width: 3vw;
+        }
+
+        .logo__letterS {
+            width: 2.75vw;
+        }
+
+        .logo__letterA {
+            width: 2.75vw;
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 16vw;
+    
+        a {
+            color: $color-2;
+        }
+
+        .nav-unactive {
+            font-size: 1.2vw;
+        }
+
+        .nav-active {
+            font-size: 1.2vw;
+            position: relative;
+    
+            &::after {
+                content: "";
+                height: 1px;
+                width: 0;
+                background: $color-2;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: anim 0.3s ease forwards;
+                bottom: 0px;
+    
+                @keyframes anim {
+                    to {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+
+        .logo {
+            width: 20vw;
+
+            .logo__letterK {
+                width: 6vw;
+            }
+    
+            .logo__letterAM {
+                width: 5vw;
+            }
+    
+            .logo__letterS {
+                width: 4vw;
+            }
+    
+            .logo__letterA {
+                width: 4vw;
+            }
+        }
+
+        .nav {
+            width: 20vw;
+
+            .nav-unactive {
+                font-size: 1.5vw;
+            }
+    
+            .nav-active {
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+
+        .logo {
+            width: 39vw;
+
+            .logo__letterK {
+                width: 10vw;
+            }
+    
+            .logo__letterAM {
+                width: 7.75vw;
+            }
+    
+            .logo__letterS {
+                width: 6.75vw;
+            }
+    
+            .logo__letterA {
+                width: 6.75vw;
+            }
+        }
+        .nav {
+            width: 33vw;
+    
+            .nav-unactive {
+                font-size: 3.5vw;
+            }
+    
+            .nav-active {
+                font-size: 3.5vw;
+            }
+        }
+    }
+}

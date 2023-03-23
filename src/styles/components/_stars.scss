@@ -1,0 +1,23 @@
+.stars {
+    display: flex;
+    margin-top: 1.5vw;
+    
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.7vw;
+        
+        img {
+            width: 2.2vw;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stars {
+            width: 16.5vw;
+            height: 4.3vw;
+            margin-top: 1vw;
+    }
+}

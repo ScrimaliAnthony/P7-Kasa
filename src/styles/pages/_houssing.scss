@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 87.5vw;
+
+    .info {
+
+    }
+    
+    .params {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.drop {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .flex {
+        flex-direction: column;
+
+        .info {
+
+        }
+
+        .params {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .drop {
+        flex-direction: column;
+    }
+}

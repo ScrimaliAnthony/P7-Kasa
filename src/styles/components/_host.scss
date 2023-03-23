@@ -1,0 +1,41 @@
+.host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: end;
+        font-weight: 500;
+        font-size: 1.3vw;
+        width: min-content;
+        margin-right: 0.7vw;
+        color: $color-2;
+    }
+
+    img {
+        border-radius: 100px;
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .host {
+        width: 17.5vw;
+        height: 7.5vw;
+        margin-left: 26vw;
+        margin-top: 0.5vw;
+
+        p {
+            font-size: 2vw;
+        }
+
+        img {
+            width: 6vw;
+            height: 6vw;
+        }
+    }
+}

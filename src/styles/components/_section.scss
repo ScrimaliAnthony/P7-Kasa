@@ -1,0 +1,65 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15.5vw;
+    border-radius: 1.8vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.section--home {
+    background-image: url("/background/Photo1.webp");
+    margin-top: 5vw;
+
+    &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 1.8vw;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+        position: absolute;
+        font-weight: 500;
+        font-size: 4vw;
+        color: $color-1;
+        
+        br {
+            display: none;
+        }
+    }
+}
+
+.section--about {
+    background-image: url("../../../public/images/Photo2.webp");
+    margin-top: 3.2vw;
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        justify-content: flex-start;
+        height: 20vw;
+    }
+
+    .section--home {
+        background-position: 60% 52%;
+        background-size: 150%;
+        h1 {
+            font-size: 3vw;
+            padding-left: 16px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    .section--about {
+        height: 52.7vw;
+        margin-top: 3vw;
+    }
+}

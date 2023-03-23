@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./fonts/Montserrat-Regular.ttf);
+  }
+  
+  $font-1: "font-1", sans-serif;
+  
+  $color-1: #ffffff;
+  $color-2: #FF6060;
+  $color-3: #000000;
+  $white: rgb(243, 243, 243);
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: $white;
+    font-family: $font-1;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  

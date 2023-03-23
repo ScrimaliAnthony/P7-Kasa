@@ -1,0 +1,135 @@
+.dropdown {
+    margin-top: 1.3vw;
+    margin-right: 7vw;
+
+    button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40.3vw;
+        height: 3.5vw;
+        border-radius: 0.7vw;
+        background-color: $color-2;
+        color: $color-1;
+        font-weight: 500;
+        font-size: 1.6vw;
+        border: none;
+        cursor: pointer;
+        padding: 1.5vw;
+
+        img {
+            transition: transform 0.3s ease;
+            transform: rotate(180deg);
+            width: 1.8vw;
+            
+            &.open {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    
+    p {
+        width: 40.3vw;
+        font-size: 1.6vw;
+        font-weight: 400;
+        line-height: 2.3vw;
+        margin-top: 2vw;
+        padding-left: 1.3vw;
+        padding-right: 1vw;
+        color: $color-2;
+    }
+
+    ul {
+        width: 40.3vw;
+        font-size: 1.6vw;
+        font-weight: 400;
+        line-height: 2.3vw;
+        margin-top: 2vw;
+        padding-left: 1.3vw;
+        padding-right: 1vw;
+        color: $color-2;
+    }
+}
+
+.dropdown__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4vw;
+    
+    button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70.5vw;
+        height: 3.5vw;
+        border-radius: 0.7vw;
+        background-color: $color-2;
+        color: $color-1;
+        font-weight: 500;
+        font-size: 1.6vw;
+        border: none;
+        cursor: pointer;
+        padding: 1.5vw;
+
+        img {
+            transition: transform 0.3s ease;
+            transform: rotate(180deg);
+            width: 1.8vw;
+            
+            &.open {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    
+    p {
+        width: 70.5vw;
+        font-size: 1.6vw;
+        font-weight: 400;
+        line-height: 2.3vw;
+        margin-top: 2vw;
+        padding-left: 1.3vw;
+        padding-right: 1vw;
+        color: $color-2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dropdown {
+        margin-top: 2vw;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 87.5vw;
+            height: 5vw;
+            font-size: 2.4vw;
+        }
+
+        p {
+            width: 87.5vw;
+            font-size: 2.2vw;
+            line-height: 3vw;
+        }
+
+        ul {
+            font-size: 2.2vw;
+            line-height: 3vw;
+        }
+    }
+    
+    .dropdown__about {
+        margin-top: 2vw;
+
+        button {
+            width: 88vw;
+
+        }
+
+        p {
+            width: 88vw;
+        }
+    }
+}

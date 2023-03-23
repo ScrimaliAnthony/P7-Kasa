@@ -1,0 +1,29 @@
+.title {
+    color: $color-2;
+    margin-top: 2.1vw;
+    
+    h1 {
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    
+    p {
+        font-size: 1vw;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        width: 87.7vw;
+        
+        h1 {
+            font-size: 3.7vw;
+        }
+        
+        p {
+            font-size: 3vw;
+            margin-top: 1vw;
+        }
+    }
+}
