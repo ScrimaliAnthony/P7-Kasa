@@ -1,3 +1,11 @@
+Projet 7 Kasa
+
+Projet OpenClassrooms
+
+Le but de se projet est d'intégrer une maquette figma en utilisant React. La partie style est faite avec Sass.
+Le projet est entièrement créé en partant de zero
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
